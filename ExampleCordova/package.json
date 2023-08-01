@@ -16,10 +16,10 @@
     "cordova-android": "^12.0.0",
     "cordova-ios": "^7.0.0",
     "cordova-plugin-add-swift-support": "^2.0.2",
-    "cordova-plugin-customfcmreceiver": "file:../cordova-plugin-customfcmreceiver",
+    "cordova-plugin-customfcmreceiver": "file:../example-plugins/cordova-plugin-customfcmreceiver",
     "cordova-plugin-dialogs": "^2.0.2",
-    "cordova-plugin-reteno": "file:../reteno-cordova/cordova-plugin-reteno",
-    "cordova-plugin-reteno-firebase": "file:../reteno-cordova/cordova-plugin-reteno-firebase"
+    "cordova-plugin-reteno": "file:../cordova-plugin-reteno",
+    "cordova-plugin-reteno-firebase": "file:../cordova-plugin-reteno-firebase"
   },
   "cordova": {
     "platforms": [

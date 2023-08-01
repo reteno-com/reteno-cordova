@@ -1,0 +1,43 @@
+{
+  "cordova-plugin-reteno": {
+    "source": {
+      "type": "local",
+      "path": "../../cordova-plugin-reteno"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-reteno-firebase": {
+    "source": {
+      "type": "local",
+      "path": "../../cordova-plugin-reteno-firebase"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-customfcmreceiver": {
+    "source": {
+      "type": "local",
+      "path": "../../cordova-plugin-customfcmreceiver"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-dialogs": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-dialogs"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+
+}
