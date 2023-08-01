@@ -2,7 +2,9 @@
 #import "FirebasePlugin.h"
 #import "Firebase.h"
 #import <objc/runtime.h>
-
+#import "Bridging-Header.h"
+#import "RetenoPlugin-Bridging-Header.h"
+//#import "<YourProject>-Swift.h"
 
 @import UserNotifications;
 @import FirebaseFirestore;
@@ -140,6 +142,9 @@ static __weak id <UNUserNotificationCenterDelegate> _prevUserNotificationCenterD
     @try{
         [FirebasePlugin.firebasePlugin _logMessage:[NSString stringWithFormat:@"didReceiveRegistrationToken: %@", fcmToken]];
         [FirebasePlugin.firebasePlugin sendToken:fcmToken];
+        //RetenoUtils * retenoUtils = [RetenoUtils new];
+        //[retenoUtils processRemoteNotificationsTokenWithFcmToken:fcmToken];
+        
     }@catch (NSException *exception) {
         [FirebasePlugin.firebasePlugin handlePluginExceptionWithoutContext:exception];
     }

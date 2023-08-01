@@ -6,30 +6,27 @@ import Reteno
 import Sentry
 
 @objc(RetenoPlugin) class RetenoPlugin : CDVPlugin {
-    
+    var retenoStarted = false
     
     override func pluginInitialize() {
-        Reteno.start(apiKey: "630A66AF-C1D3-4F2A-ACC1-0D51C38D2B05", isDebugMode: true)
-        SentrySDK.start { options in
-                    options.dsn = "https://edea59c8151742428e1bf725e2f98954@sentry.reteno.com/4503999611666432"
-                    options.debug = true
-                    
-                    // Features turned off by default, but worth checking out
-                    options.enableAppHangTracking = true
-                    options.enableFileIOTracing = true
-        }
-        Reteno.userNotificationService.registerForRemoteNotifications();
+       
     }
     
   @objc(setApiKey:)
   func setApiKey(command: CDVInvokedUrlCommand) {
+      
     var pluginResult = CDVPluginResult(
-      status: CDVCommandStatus_ERROR
+      status: CDVCommandStatus_ERROR	
     )
-    let msg = command.arguments[0] as? String ?? ""
+    let key = command.arguments[0] as? String ?? ""
+      if (!retenoStarted){
+          Reteno.start(apiKey: key, isDebugMode: true)
+          Reteno.userNotificationService.registerForRemoteNotifications()
+          retenoStarted = true
+      }
       pluginResult = CDVPluginResult(
         status: CDVCommandStatus_OK,
-        messageAs: msg
+        messageAs: key
       )
     self.commandDelegate!.send(
       pluginResult,

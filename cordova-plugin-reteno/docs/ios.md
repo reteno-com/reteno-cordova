@@ -7,16 +7,29 @@
 ```
 
 target 'NotificationServiceExtension' do
-  pod 'Reteno', '1.6.4'
+  pod 'Reteno', '1.6.6'
   pod 'Sentry', '8.2.0', :modular_headers => true
 
 end
 
-target 'RetenoSdkExample' do
+target 'ExampleCordova' do
   ...
-  pod 'Reteno', '1.6.4'
+  pod 'Reteno', '1.6.6'
   pod 'Sentry', '8.2.0', :modular_headers => true
 end
 
 ```
 
+3. In RetenoPlugin.swift start SentrySDK with your parameters
+```swift
+override func pluginInitialize(){
+  ...
+  SentrySDK.start { options in
+                    options.dsn = "your-url"
+                    options.debug = true
+                    options.enableAppHangTracking = true
+                    options.enableFileIOTracing = true
+        }
+}
+
+```

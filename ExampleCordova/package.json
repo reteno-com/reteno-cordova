@@ -1,0 +1,64 @@
+{
+  "name": "com.reteno.sample",
+  "displayName": "ExampleCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that is integrated with Reteno SDK.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Reteno Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^12.0.0",
+    "cordova-ios": "^7.0.0",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-customfcmreceiver": "file:../cordova-plugin-customfcmreceiver",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-reteno": "file:../reteno-cordova/cordova-plugin-reteno",
+    "cordova-plugin-reteno-firebase": "file:../reteno-cordova/cordova-plugin-reteno-firebase"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-reteno": {},
+      "cordova-plugin-reteno-firebase": {
+        "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+        "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+        "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+        "FIREBASE_FCM_AUTOINIT_ENABLED": "true",
+        "ANDROID_ICON_ACCENT": "#FF00FFFF",
+        "ANDROID_FIREBASE_PERFORMANCE_MONITORING": "false",
+        "ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION": "18.0.2",
+        "ANDROID_PLAY_SERVICES_AUTH_VERSION": "20.5.0",
+        "ANDROID_FIREBASE_ANALYTICS_VERSION": "21.2.2",
+        "ANDROID_FIREBASE_MESSAGING_VERSION": "23.1.2",
+        "ANDROID_FIREBASE_CONFIG_VERSION": "21.4.0",
+        "ANDROID_FIREBASE_PERF_VERSION": "20.3.2",
+        "ANDROID_FIREBASE_AUTH_VERSION": "22.0.0",
+        "ANDROID_FIREBASE_INAPPMESSAGING_VERSION": "20.3.2",
+        "ANDROID_FIREBASE_FIRESTORE_VERSION": "24.6.0",
+        "ANDROID_FIREBASE_FUNCTIONS_VERSION": "20.3.0",
+        "ANDROID_FIREBASE_IID_VERSION": "21.1.0",
+        "ANDROID_FIREBASE_INSTALLATIONS_VERSION": "17.1.3",
+        "ANDROID_FIREBASE_CRASHLYTICS_VERSION": "18.3.7",
+        "ANDROID_FIREBASE_CRASHLYTICS_NDK_VERSION": "18.3.7",
+        "ANDROID_GSON_VERSION": "2.9.0",
+        "ANDROID_FIREBASE_PERF_GRADLE_PLUGIN_VERSION": "1.4.2",
+        "ANDROID_GRPC_OKHTTP": "1.46.0"
+      },
+      "cordova-plugin-customfcmreceiver": {},
+      "cordova-plugin-dialogs": {},
+	  "cordova-plugin-add-swift-support": {}
+    }
+  },
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}

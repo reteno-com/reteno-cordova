@@ -49,19 +49,20 @@
       <param name="ios-package" value="RetenoPlugin" />
     </feature>
   </config-file>
-  <!--header-file src="src/ios/RetenoPlugin.h" /-->
-  <!--source-file src="src/ios/RetenoPlugin.m" /-->
+  <preference name="deployment-target" value="12.0.0" />
+  <preference name="UseSwiftLanguageVersion" value="5" />
   <source-file src="src/ios/RetenoPlugin.swift" />
   <source-file src="src/ios/RetenoEvent.swift" />
   <header-file src="src/ios/RetenoPlugin-Bridging-Header.h" />
   <source-file src="src/ios/RetenoUserAttributes.swift" />
+  <source-file src="src/ios/RetenoUtils.swift" />
 
 	<podspec>
 		<config>
 			<source url="https://cdn.cocoapods.org/"/>
 		</config>
 		<pods use-frameworks="true">
-			<pod name="Reteno" spec="1.6.5"/>
+			<pod name="Reteno" spec="1.6.6"/>
 		</pods>
 	</podspec>
 </platform>
