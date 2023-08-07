@@ -1,0 +1,21 @@
+<ion-col size-md="6" offset-md="3">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Add params</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Name" labelPlacement="floating"
+                   type="text" id="name" [(ngModel)]="customParameter.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Value" labelPlacement="floating"
+                   type="text" id="value" [(ngModel)]="customParameter.value"></ion-input>
+      </ion-item>
+      <ion-button id="btn-new-param" (click)="createParameters()">
+        <ion-icon slot="start" name="add"></ion-icon>
+        Add Parameter
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-col>

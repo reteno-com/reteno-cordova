@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ionic Reteno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-content>
+            <ion-item [routerLink]="['/userattributes']">
+              <ion-button>Go to Attributes</ion-button>
+            </ion-item>
+            <ion-item [routerLink]="['/customevents']">
+              <ion-button>Go to Event</ion-button>
+            </ion-item>
+            <ion-item [routerLink]="['/anonymoususerattributes']">
+              <ion-button>Go to Anonymous Attributes</ion-button>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setApiKey()">Set Api Key</ion-button>
+
+        <h2>Firebase Test</h2>
+
+        <div id="ui">
+          <h3>OS</h3>
+          <p>Platform: <span id="device-platform"></span></p>
+
+          <h3>Notifications</h3>
+          <ion-button (click)="clearNotifications()">Clear notifications</ion-button>
+          <ion-button (click)="getID()">Get FCM ID</ion-button>
+          <ion-button (click)="getToken()">Get FCM token</ion-button>
+          <ion-button (click)="getAPNSToken()" class="ios-only">Get APNS token</ion-button>
+          <ion-button (click)="getBadgeNumber()" class="ios-only">Get badge number</ion-button>
+          <ion-button (click)="incrementBadgeNumber()" class="ios-only">Increment badge number</ion-button>
+          <ion-button (click)="clearBadgeNumber()">Clear badge number</ion-button>
+          <ion-button (click)="subscribe()">Subscribe</ion-button>
+          <ion-button (click)="unsubscribe()">Unsubscribe</ion-button>
+          <ion-button (click)="unregister()">Unregister</ion-button>
+          <ion-button (click)="enableAutoInit()">Enable Auto Init</ion-button>
+          <ion-button (click)="disableAutoInit()">Disable Auto Init</ion-button>
+        </div>
+
+
+        <h3>Activity log (latest first)</h3>
+        <button onclick="clearLog()">Clear activity log</button>
+        <pre id="log-output"></pre>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

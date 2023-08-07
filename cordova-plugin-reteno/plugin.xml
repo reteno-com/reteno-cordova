@@ -45,12 +45,12 @@
 
 <platform name="ios">
   <config-file target="config.xml" parent="/*">
+  <preference name="deployment-target" value="12.0"/>
+  <preference name="SwiftVersion" value="5"/>
     <feature name="RetenoPlugin">
       <param name="ios-package" value="RetenoPlugin" />
     </feature>
   </config-file>
-  <preference name="deployment-target" value="12.0.0" />
-  <preference name="UseSwiftLanguageVersion" value="5" />
   <source-file src="src/ios/RetenoPlugin.swift" />
   <source-file src="src/ios/RetenoEvent.swift" />
   <header-file src="src/ios/RetenoPlugin-Bridging-Header.h" />

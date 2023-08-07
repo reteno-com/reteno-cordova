@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "reteno-mobile-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/reteno-com/reteno-mobile-ios-sdk.git",
+      "state" : {
+        "revision" : "1dd0eb5fb149f85ef10bd622ed3c7aa3f274dc38",
+        "version" : "1.6.6"
+      }
+    },
+    {
+      "identity" : "sentry-cocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/getsentry/sentry-cocoa",
+      "state" : {
+        "revision" : "04bee4ad86d74d4cb4d7101ff826d6e355301ba9",
+        "version" : "8.9.4"
+      }
+    }
+  ],
+  "version" : 2
+}
