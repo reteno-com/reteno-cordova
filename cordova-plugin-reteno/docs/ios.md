@@ -33,3 +33,30 @@ override func pluginInitialize(){
 }
 
 ```
+
+4. Install Swift Support plugin [link] (https://www.npmjs.com/package/cordova-plugin-add-swift-support), in case if project is not configured for Swift yet:
+```
+cordova plugin add cordova-plugin-add-swift-support
+```
+
+5. If Reteno Firebase notification should be supported, please apply changes in AppDelegate+FirebasePlugin.m [link] (https://github.com/reteno-com/reteno-cordova/blob/main/cordova-plugin-reteno-firebase/src/ios/AppDelegate%2BFirebasePlugin.m)
+   
+5.1. import Swift header:
+```
+#import "<YourProject>-Swift.h"
+```
+
+5.2. Uncomment call to RetenoUtil in didReceiveRegistrationToken
+```
+- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken {
+    @try{
+        [FirebasePlugin.firebasePlugin _logMessage:[NSString stringWithFormat:@"didReceiveRegistrationToken: %@", fcmToken]];
+        [FirebasePlugin.firebasePlugin sendToken:fcmToken];
+        RetenoUtils * retenoUtils = [RetenoUtils new];
+        [retenoUtils processRemoteNotificationsTokenWithFcmToken:fcmToken];
+        
+    }@catch (NSException *exception) {
+        [FirebasePlugin.firebasePlugin handlePluginExceptionWithoutContext:exception];
+    }
+}
+```
