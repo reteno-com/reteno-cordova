@@ -73,8 +73,10 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 awesome-cordova-plugins-reteno
+MIT
 
 awesome-cordova-plugins-reteno-firebase
+MIT
 
 ionic-loader
 

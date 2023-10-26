@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {AlertController} from "@ionic/angular";
-import {Address, User, UserAttributes, SetUserAttributesPayload, AwesomeCordovaPluginReteno} from "../../../../awesome-cordova-plugin-reteno/dist/ngx";
+import { AlertController } from '@ionic/angular';
+import {
+  Address,
+  User,
+  UserAttributes,
+  SetUserAttributesPayload,
+  AwesomeCordovaPluginReteno,
+} from '../../../../../awesome-cordova-plugin-reteno/dist/ngx';
 
 @Component({
   selector: 'app-userattributes',
@@ -8,7 +14,6 @@ import {Address, User, UserAttributes, SetUserAttributesPayload, AwesomeCordovaP
   styleUrls: ['./userattributes.page.scss'],
 })
 export class UserattributesPage implements OnInit {
-
   externalId = '';
   email = '';
   phone = '';
@@ -21,12 +26,12 @@ export class UserattributesPage implements OnInit {
   address = '';
   postcode = '';
 
-  constructor(private alertController: AlertController,
-              private retenoPlugin: AwesomeCordovaPluginReteno) {
-  }
+  constructor(
+    private alertController: AlertController,
+    private retenoPlugin: AwesomeCordovaPluginReteno
+  ) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   async sendAttributes() {
     if (this.externalId.trim().length <= 0) {
@@ -38,26 +43,26 @@ export class UserattributesPage implements OnInit {
       await alert.present();
       return;
     }
-    const retenoAddress : Address = {
-      region : this.region,
-      town : this.town,
-      address : this.address,
-      postcode : this.postcode
+    const retenoAddress: Address = {
+      region: this.region,
+      town: this.town,
+      address: this.address,
+      postcode: this.postcode,
     };
 
-    const userAttributes : UserAttributes = {
-      phone : this.phone,
-      email : this.email,
-      firstName : this.firstName,
-      lastName : this.lastName,
-      languageCode : this.language,
-      timeZone : this.timezone,
-      address : retenoAddress
+    const userAttributes: UserAttributes = {
+      phone: this.phone,
+      email: this.email,
+      firstName: this.firstName,
+      lastName: this.lastName,
+      languageCode: this.language,
+      timeZone: this.timezone,
+      address: retenoAddress,
     };
 
-    const payload : SetUserAttributesPayload = {
+    const payload: SetUserAttributesPayload = {
       externalUserId: this.externalId,
-      userAttributes : userAttributes
+      userAttributes: userAttributes,
     };
     this.retenoPlugin.setUserAttributes(payload);
     this.clear();
@@ -76,5 +81,4 @@ export class UserattributesPage implements OnInit {
     this.address = '';
     this.postcode = '';
   }
-
 }

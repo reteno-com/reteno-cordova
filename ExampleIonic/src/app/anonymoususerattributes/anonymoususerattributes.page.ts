@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {Address,UserAttributes, AwesomeCordovaPluginReteno} from "../../../../awesome-cordova-plugin-reteno/dist/ngx";
-import {AlertController} from "@ionic/angular";
+import {
+  Address,
+  UserAttributes,
+  AwesomeCordovaPluginReteno,
+} from '../../../../../awesome-cordova-plugin-reteno/dist/ngx';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-anonymoususerattributes',
@@ -8,7 +12,6 @@ import {AlertController} from "@ionic/angular";
   styleUrls: ['./anonymoususerattributes.page.scss'],
 })
 export class AnonymoususerattributesPage implements OnInit {
-
   firstName = '';
   lastName = '';
   language = '';
@@ -18,32 +21,31 @@ export class AnonymoususerattributesPage implements OnInit {
   address = '';
   postcode = '';
 
-  constructor(private alertController: AlertController,
-              private retenoPlugin: AwesomeCordovaPluginReteno) {
+  constructor(
+    private alertController: AlertController,
+    private retenoPlugin: AwesomeCordovaPluginReteno
+  ) {}
 
-  }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   async sendAttributes() {
-    const retenoAddress : Address = {
-      region : this.region,
-      town : this.town,
-      address : this.address,
-      postcode : this.postcode
+    const retenoAddress: Address = {
+      region: this.region,
+      town: this.town,
+      address: this.address,
+      postcode: this.postcode,
     };
 
-    const userAttributes : UserAttributes = {
-      firstName : this.firstName,
-      lastName : this.lastName,
-      languageCode : this.language,
-      timeZone : this.timezone,
-      address : retenoAddress
+    const userAttributes: UserAttributes = {
+      firstName: this.firstName,
+      lastName: this.lastName,
+      languageCode: this.language,
+      timeZone: this.timezone,
+      address: retenoAddress,
     };
 
-    const payload =  {
-      userAttributes
+    const payload = {
+      userAttributes,
     };
     this.retenoPlugin.setAnonymousUserAttributes(payload);
     this.clear();
@@ -59,5 +61,4 @@ export class AnonymoususerattributesPage implements OnInit {
     this.address = '';
     this.postcode = '';
   }
-
 }

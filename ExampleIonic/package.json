@@ -9,7 +9,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "android": "ionic cordova run android"
   },
   "private": true,
   "dependencies": {
@@ -24,8 +25,10 @@
     "@awesome-cordova-plugins/core": "^6.4.0",
     "@ionic/angular": "^7.0.0",
     "@ionic/cordova-builders": "^10.0.0",
-    "awesome-cordova-plugins-reteno": "file:../awesome-cordova-plugin-reteno/dist",
-    "awesome-cordova-plugins-reteno-firebase": "file:../awesome-cordova-plugin-reteno-firebase/dist",
+    "awesome-cordova-plugins-reteno": "file:../../awesome-cordova-plugin-reteno/dist",
+    "awesome-cordova-plugins-reteno-firebase": "file:../../awesome-cordova-plugin-reteno-firebase/dist",
+    "cordova-plugin-reteno": "^1.0.0",
+    "cordova-plugin-reteno-firebase": "^1.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -53,8 +56,6 @@
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^5.0.0",
-    "cordova-plugin-reteno": "file:../cordova-plugin-reteno",
-    "cordova-plugin-reteno-firebase": "file:../cordova-plugin-reteno-firebase",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "eslint": "^7.26.0",
