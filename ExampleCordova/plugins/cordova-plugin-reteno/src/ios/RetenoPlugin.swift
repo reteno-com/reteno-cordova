@@ -9,7 +9,7 @@ import Sentry
     
     
     override func pluginInitialize() {
-        Reteno.start(apiKey: "630A66AF-C1D3-4F2A-ACC1-0D51C38D2B05", isDebugMode: true)
+        Reteno.start(apiKey: "your_access_key_here", isDebugMode: true)
         SentrySDK.start { options in
                     options.dsn = "https://edea59c8151742428e1bf725e2f98954@sentry.reteno.com/4503999611666432"
                     options.debug = true

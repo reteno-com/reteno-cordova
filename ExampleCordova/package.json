@@ -5,7 +5,8 @@
   "description": "A sample Apache Cordova application that is integrated with Reteno SDK.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "android": "cordova run android"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -16,10 +17,8 @@
     "cordova-android": "^12.0.0",
     "cordova-ios": "^7.0.0",
     "cordova-plugin-add-swift-support": "^2.0.2",
-    "cordova-plugin-customfcmreceiver": "file:../example-plugins/cordova-plugin-customfcmreceiver",
-    "cordova-plugin-dialogs": "^2.0.2",
-    "cordova-plugin-reteno": "file:../cordova-plugin-reteno",
-    "cordova-plugin-reteno-firebase": "file:../cordova-plugin-reteno-firebase"
+    "cordova-plugin-customfcmreceiver": "file:../../example-plugins/cordova-plugin-customfcmreceiver",
+    "cordova-plugin-dialogs": "^2.0.2"
   },
   "cordova": {
     "platforms": [
@@ -55,10 +54,12 @@
       },
       "cordova-plugin-customfcmreceiver": {},
       "cordova-plugin-dialogs": {},
-	  "cordova-plugin-add-swift-support": {}
+      "cordova-plugin-add-swift-support": {}
     }
   },
   "dependencies": {
+    "cordova-plugin-reteno": "^1.0.0",
+    "cordova-plugin-reteno-firebase": "^1.0.0",
     "xml-js": "^1.6.11"
   }
 }

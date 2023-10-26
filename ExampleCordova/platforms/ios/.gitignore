@@ -3,3 +3,9 @@
 *.pbxuser
 .DS_Store
 build/
+
+Pods/
+/www/*
+*.xcuserstate
+xcuserdata
+project.xcworkspace

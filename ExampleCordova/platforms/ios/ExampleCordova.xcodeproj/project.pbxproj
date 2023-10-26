@@ -22,9 +22,11 @@
 		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		51465F7682584D77B0FFBE57 /* FirebasePluginMessageReceiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F70503BD8F4BAABD55B9E5 /* FirebasePluginMessageReceiverManager.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		A2949DA535799F952A9E5587 /* Pods_ExampleCordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C6D326EF23CE5E3C201C5 /* Pods_ExampleCordova.framework */; };
 		A5BD7EEB11524AFCA78F55E3 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D49BDE53A6E4DC6A64DE19D /* CDVNotification.bundle */; };
 		B4881CB834F249A6A08752D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA9B1232F99483BABEF7F61 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7CEE2A0C0214B13ADFDF8A0 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B738F9E1546484CB2C0528E /* CDVNotification.m */; };
+		BE82330AE89134266B446509 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D5CF8E974C43982F213C70 /* Pods_NotificationServiceExtension.framework */; };
 		C318DDDF2A784E0600A425AC /* Reteno in Frameworks */ = {isa = PBXBuildFile; productRef = C318DDDE2A784E0600A425AC /* Reteno */; };
 		C318DDE82A785B1100A425AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C318DDE72A785B1100A425AC /* GoogleService-Info.plist */; };
 		C318DDEA2A785F0000A425AC /* RetenoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318DDE92A785F0000A425AC /* RetenoUtils.swift */; };
@@ -34,7 +36,6 @@
 		C9BA21E13533406CB58AC3D8 /* RetenoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF1F6B1C844836A420C6A0 /* RetenoPlugin.swift */; };
 		CCE92D8345CD47CDBFE8D2C6 /* CustomFCMReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B81867001A4B42A4B8FF3634 /* CustomFCMReceiver.m */; };
 		E2CD4D5C5ED24A669B1DE007 /* RetenoUserAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137DA32DFBF4AF390C3B5D6 /* RetenoUserAttributes.swift */; };
-		EA183E143567E90C26C78FA7 /* Pods_ExampleCordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69089024668EC0711AB2A21F /* Pods_ExampleCordova.framework */; };
 		F2402357C8FB435987C5A1BB /* RetenoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C9582EA5C4CFB8658B57B /* RetenoEvent.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156135FCF446415A8D9754AE /* CDVNotification.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVNotification.h; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; };
+		1AC083168172864BFEE05FD1 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		1B6E787547CB465D97E0943C /* RetenoPlugin-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "RetenoPlugin-Bridging-Header.h"; path = "cordova-plugin-reteno/RetenoPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,15 +113,14 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
-		32CA4F630368D1EE00C91783 /* ExampleCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExampleCordova-Prefix.pch"; sourceTree = "<group>"; };
 		4A3EF098630F4674BDFDFBBC /* CustomFCMReceiverPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CustomFCMReceiverPlugin.h; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiverPlugin.h"; sourceTree = "<group>"; };
 		6175EF9D12DC4D6E986D88A1 /* AuthenticationServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		62FEE13A4DC2434598A669EA /* FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePlugin.h; path = "cordova-plugin-reteno-firebase/FirebasePlugin.h"; sourceTree = "<group>"; };
-		69089024668EC0711AB2A21F /* Pods_ExampleCordova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleCordova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C8AD0DE4B3F3B9F2B8F955 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CDVLaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C2C9582EA5C4CFB8658B57B /* RetenoEvent.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoEvent.swift; path = "cordova-plugin-reteno/RetenoEvent.swift"; sourceTree = "<group>"; };
 		6D49BDE53A6E4DC6A64DE19D /* CDVNotification.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
-		7B87222988D4F71F8B2B6ADB /* Pods-ExampleCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleCordova.release.xcconfig"; path = "Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova.release.xcconfig"; sourceTree = "<group>"; };
+		6E2D12762AE2BEE40002A02C /* ExampleCordova-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ExampleCordova-Prefix.pch"; path = "../../../../../../../../Downloads/ExampleCordova-Prefix.pch"; sourceTree = "<group>"; };
 		80F70503BD8F4BAABD55B9E5 /* FirebasePluginMessageReceiverManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePluginMessageReceiverManager.m; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiverManager.m"; sourceTree = "<group>"; };
 		8137DA32DFBF4AF390C3B5D6 /* RetenoUserAttributes.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoUserAttributes.swift; path = "cordova-plugin-reteno/RetenoUserAttributes.swift"; sourceTree = "<group>"; };
 		85E1623E4F594DD28F24DB68 /* FirebasePluginMessageReceiverManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiverManager.h; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiverManager.h"; sourceTree = "<group>"; };
@@ -127,12 +128,13 @@
 		8D1107310486CEB800E47090 /* ExampleCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExampleCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9084847437054EE4AB69BC33 /* AppDelegate+FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+FirebasePlugin.m"; path = "cordova-plugin-reteno-firebase/AppDelegate+FirebasePlugin.m"; sourceTree = "<group>"; };
 		92CECFB6EF2C483AA025D32C /* CustomFCMReceiverPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CustomFCMReceiverPlugin.m; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiverPlugin.m"; sourceTree = "<group>"; };
+		993C6D326EF23CE5E3C201C5 /* Pods_ExampleCordova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleCordova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D5CF8E974C43982F213C70 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D8735C34644A79B928A050 /* FirebasePluginMessageReceiver.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiver.h; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiver.h"; sourceTree = "<group>"; };
 		A9FF1F6B1C844836A420C6A0 /* RetenoPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoPlugin.swift; path = "cordova-plugin-reteno/RetenoPlugin.swift"; sourceTree = "<group>"; };
 		B09A74A529DF4994AF301F42 /* FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePlugin.m; path = "cordova-plugin-reteno-firebase/FirebasePlugin.m"; sourceTree = "<group>"; };
 		B09E34AB78204AE583490287 /* AppDelegate+FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+FirebasePlugin.h"; path = "cordova-plugin-reteno-firebase/AppDelegate+FirebasePlugin.h"; sourceTree = "<group>"; };
 		B81867001A4B42A4B8FF3634 /* CustomFCMReceiver.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CustomFCMReceiver.m; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiver.m"; sourceTree = "<group>"; };
-		BAAC5B8DCB083BF3EF4536B2 /* Pods-ExampleCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleCordova.debug.xcconfig"; path = "Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova.debug.xcconfig"; sourceTree = "<group>"; };
 		C318DDE72A785B1100A425AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C318DDE92A785F0000A425AC /* RetenoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetenoUtils.swift; sourceTree = "<group>"; };
 		C39600FD2A79006E00B4A237 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,12 +142,14 @@
 		C39601012A79006E00B4A237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39601132A7908F300B4A237 /* NotificationServiceExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		CE69BDCD6AC849B2860CFFA2 /* CustomFCMReceiver.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CustomFCMReceiver.h; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiver.h"; sourceTree = "<group>"; };
+		D70318827A132921403A852E /* Pods-ExampleCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleCordova.release.xcconfig"; path = "Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova.release.xcconfig"; sourceTree = "<group>"; };
 		D9E22B14B54344D9AB7A0A02 /* FirebasePluginMessageReceiver.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePluginMessageReceiver.m; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiver.m"; sourceTree = "<group>"; };
 		EAA9B1232F99483BABEF7F61 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ExampleCordova/config.xml; sourceTree = "<group>"; };
+		FFC7CE0672E84EE7DB3B3711 /* Pods-ExampleCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleCordova.debug.xcconfig"; path = "Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +161,7 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				B4881CB834F249A6A08752D0 /* AudioToolbox.framework in Frameworks */,
 				393D0CD46F11431F92A8D29B /* AuthenticationServices.framework in Frameworks */,
-				EA183E143567E90C26C78FA7 /* Pods_ExampleCordova.framework in Frameworks */,
+				A2949DA535799F952A9E5587 /* Pods_ExampleCordova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C396010A2A79045A00B4A237 /* Reteno in Frameworks */,
+				BE82330AE89134266B446509 /* Pods_NotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +210,8 @@
 			children = (
 				C318DDE72A785B1100A425AC /* GoogleService-Info.plist */,
 				8D1107310486CEB800E47090 /* ExampleCordova-Info.plist */,
-				32CA4F630368D1EE00C91783 /* ExampleCordova-Prefix.pch */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				6E2D12762AE2BEE40002A02C /* ExampleCordova-Prefix.pch */,
 				0207DA571B56EA530066E2B4 /* Assets.xcassets */,
 				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
@@ -234,7 +239,8 @@
 			children = (
 				EAA9B1232F99483BABEF7F61 /* AudioToolbox.framework */,
 				6175EF9D12DC4D6E986D88A1 /* AuthenticationServices.framework */,
-				69089024668EC0711AB2A21F /* Pods_ExampleCordova.framework */,
+				993C6D326EF23CE5E3C201C5 /* Pods_ExampleCordova.framework */,
+				A4D5CF8E974C43982F213C70 /* Pods_NotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,8 +293,10 @@
 		43870D722C28177E4EE68828 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BAAC5B8DCB083BF3EF4536B2 /* Pods-ExampleCordova.debug.xcconfig */,
-				7B87222988D4F71F8B2B6ADB /* Pods-ExampleCordova.release.xcconfig */,
+				FFC7CE0672E84EE7DB3B3711 /* Pods-ExampleCordova.debug.xcconfig */,
+				D70318827A132921403A852E /* Pods-ExampleCordova.release.xcconfig */,
+				66C8AD0DE4B3F3B9F2B8F955 /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				1AC083168172864BFEE05FD1 /* Pods-NotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -319,15 +327,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ExampleCordova" */;
 			buildPhases = (
-				F5B8CE6FCFB41D241E62B79A /* [CP] Check Pods Manifest.lock */,
+				D7F82C82B30B46D4207F875A /* [CP] Check Pods Manifest.lock */,
 				857339E32710CC9700A1C74C /* Copy Staging Resources */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				B70C3B457F9645E2BAC99906 /* Crashlytics */,
-				AF04098C2B7F1EA0EDF58292 /* [CP] Embed Pods Frameworks */,
-				0CFC64283A62BEA41ACD8A5D /* [CP] Copy Pods Resources */,
 				C39601082A79006E00B4A237 /* Embed Foundation Extensions */,
+				EA416D5C1CBAAC0EBEB36AFD /* [CP] Embed Pods Frameworks */,
+				FBA7E3F9D94381DF38268F2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39601052A79006E00B4A237 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
 			buildPhases = (
+				ACEE0BEA7BDEFFD551F5881D /* [CP] Check Pods Manifest.lock */,
 				C39600F92A79006E00B4A237 /* Sources */,
 				C39600FA2A79006E00B4A237 /* Frameworks */,
 				C39600FB2A79006E00B4A237 /* Resources */,
@@ -372,9 +381,6 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
-					1D6058900D05DD3D006BFB54 = {
-						ProvisioningStyle = Automatic;
-					};
 					C39600FC2A79006E00B4A237 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -448,38 +454,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CFC64283A62BEA41ACD8A5D /* [CP] Copy Pods Resources */ = {
+		ACEE0BEA7BDEFFD551F5881D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF04098C2B7F1EA0EDF58292 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B70C3B457F9645E2BAC99906 /* Crashlytics */ = {
@@ -498,7 +492,7 @@
 			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"";
 			showEnvVarsInLog = 0;
 		};
-		F5B8CE6FCFB41D241E62B79A /* [CP] Check Pods Manifest.lock */ = {
+		D7F82C82B30B46D4207F875A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -518,6 +512,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA416D5C1CBAAC0EBEB36AFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA7E3F9D94381DF38268F2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -577,7 +605,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9JJR3XKX7;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -589,6 +620,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.reteno.example-app";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -609,7 +642,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9JJR3XKX7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleCordova/ExampleCordova-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -619,6 +655,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.reteno.example-app";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -730,6 +768,7 @@
 		};
 		C39601062A79006E00B4A237 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C8AD0DE4B3F3B9F2B8F955 /* Pods-NotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -742,11 +781,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/NotificationServiceExtension/NotificationServiceExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9JJR3XKX7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -771,6 +812,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app.NotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.reteno.example-app.NotificationServiceExtension";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -781,6 +823,7 @@
 		};
 		C39601072A79006E00B4A237 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC083168172864BFEE05FD1 /* Pods-NotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -793,11 +836,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/NotificationServiceExtension/NotificationServiceExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9JJR3XKX7;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -817,6 +862,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app.NotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.reteno.example-app.NotificationServiceExtension";
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;

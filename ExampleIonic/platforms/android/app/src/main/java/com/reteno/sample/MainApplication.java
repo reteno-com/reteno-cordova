@@ -11,6 +11,13 @@ import com.reteno.plugin.CordovaRetenoApplication;
 public class MainApplication extends Application implements CordovaRetenoApplication {
     private String key=null;
     private Reteno retenoInstance=null;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        retenoInstance = new RetenoImpl(this, "your_access_key_here");
+    }
+
     @NonNull
     @Override
     public Reteno getRetenoInstance() {

@@ -15,7 +15,7 @@
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
     <name>ExampleCordova</name>
-    <description>Sample Apache Cordova App</description>
+    <description>Apache Reteno Cordova App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
