@@ -26,7 +26,6 @@
       "ios"
     ],
     "plugins": {
-      "cordova-plugin-reteno": {},
       "cordova-plugin-reteno-firebase": {
         "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
         "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
@@ -54,11 +53,12 @@
       },
       "cordova-plugin-customfcmreceiver": {},
       "cordova-plugin-dialogs": {},
-      "cordova-plugin-add-swift-support": {}
+      "cordova-plugin-add-swift-support": {},
+      "cordova-plugin-reteno": {}
     }
   },
   "dependencies": {
-    "cordova-plugin-reteno": "^1.0.0",
+    "cordova-plugin-reteno": "1.0.0",
     "cordova-plugin-reteno-firebase": "^1.0.0",
     "xml-js": "^1.6.11"
   }

@@ -17,27 +17,27 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
-      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
-      "pluginId": "cordova-plugin-reteno",
-      "clobbers": [
-        "RetenoPlugin"
-      ]
-    },
-    {
       "id": "cordova-plugin-reteno-firebase.FirebasePlugin",
       "file": "plugins/cordova-plugin-reteno-firebase/www/firebase.js",
       "pluginId": "cordova-plugin-reteno-firebase",
       "clobbers": [
         "FirebasePlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
+      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
+      "pluginId": "cordova-plugin-reteno",
+      "clobbers": [
+        "RetenoPlugin"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-customfcmreceiver": "1.0.0",
     "cordova-plugin-dialogs": "2.0.2",
-    "cordova-plugin-reteno": "0.0.1",
     "cordova-plugin-reteno-firebase": "16.1.0",
-    "cordova-plugin-add-swift-support": "2.0.2"
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova-plugin-reteno": "0.0.1"
   };
 });

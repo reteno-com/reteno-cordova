@@ -9,14 +9,7 @@ import Sentry
     var retenoStarted = false
     
     override func pluginInitialize() {
-        SentrySDK.start { options in
-                    options.dsn = "https://edea59c8151742428e1bf725e2f98954@sentry.reteno.com/4503999611666432"
-                    options.debug = true
-                    
-                    // Features turned off by default, but worth checking out
-                    options.enableAppHangTracking = true
-                    options.enableFileIOTracing = true
-        }
+       
     }
     
   @objc(setApiKey:)
@@ -213,11 +206,6 @@ import Sentry
         pluginResult,
         callbackId: command.callbackId
       )
-    }
-    
-    @objc(processRemoteNotificationsToken:)
-    public static func processRemoteNotificationsToken(fcmToken: String) {
-        Reteno.userNotificationService.processRemoteNotificationsToken(fcmToken);
     }
 
   @objc(setOnRetenoPushReceivedListener:)

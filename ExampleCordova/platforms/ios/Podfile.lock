@@ -933,7 +933,7 @@ DEPENDENCIES:
   - Firebase/RemoteConfig (= 10.10.0)
   - GoogleSignIn (= 6.2.4)
   - GoogleTagManager (= 7.4.3)
-  - Reteno
+  - Reteno (= 1.6.6)
   - Sentry
 
 SPEC REPOS:
@@ -1023,6 +1023,6 @@ SPEC CHECKSUMS:
   Sentry: 39d57e691e311bdb73bc1ab5bbebbd6bc890050d
   SentryPrivate: 48712023cdfd523735c2edb6b06bedf26c4730a3
 
-PODFILE CHECKSUM: efbb199b0abc27a88d8996c63b0403329fa4a275
+PODFILE CHECKSUM: 647d7b5af791f8ea7760a098c1edd5e460f34a3f
 
 COCOAPODS: 1.12.1

@@ -109,8 +109,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-reteno/sample-reteno.gradle"
 apply from: "../cordova-plugin-reteno-firebase/sample-build.gradle"
+apply from: "../cordova-plugin-reteno/sample-reteno.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

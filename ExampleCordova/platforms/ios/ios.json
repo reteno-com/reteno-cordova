@@ -17,11 +17,19 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"RetenoPlugin\"><param name=\"ios-package\" value=\"RetenoPlugin\" /></feature>",
+              "xml": "<feature name=\"FirebasePlugin\"><param name=\"ios-package\" value=\"FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"FirebasePlugin\"><param name=\"ios-package\" value=\"FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<preference name=\"deployment-target\" value=\"12.0\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"SwiftVersion\" value=\"5\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"RetenoPlugin\"><param name=\"ios-package\" value=\"RetenoPlugin\" /></feature>",
               "count": 1
             }
           ]
@@ -66,9 +74,6 @@
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.reteno.sample"
     },
-    "cordova-plugin-reteno": {
-      "PACKAGE_NAME": "com.reteno.sample"
-    },
     "cordova-plugin-reteno-firebase": {
       "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
@@ -80,6 +85,9 @@
     },
     "cordova-plugin-add-swift-support": {
       "PACKAGE_NAME": "com.reteno.example-app"
+    },
+    "cordova-plugin-reteno": {
+      "PACKAGE_NAME": "com.reteno.example-app.NotificationServiceExtension"
     }
   },
   "dependent_plugins": {},
@@ -101,27 +109,27 @@
       ]
     },
     {
-      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
-      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
-      "pluginId": "cordova-plugin-reteno",
-      "clobbers": [
-        "RetenoPlugin"
-      ]
-    },
-    {
       "id": "cordova-plugin-reteno-firebase.FirebasePlugin",
       "file": "plugins/cordova-plugin-reteno-firebase/www/firebase.js",
       "pluginId": "cordova-plugin-reteno-firebase",
       "clobbers": [
         "FirebasePlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
+      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
+      "pluginId": "cordova-plugin-reteno",
+      "clobbers": [
+        "RetenoPlugin"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-customfcmreceiver": "1.0.0",
     "cordova-plugin-dialogs": "2.0.2",
-    "cordova-plugin-reteno": "0.0.1",
     "cordova-plugin-reteno-firebase": "16.1.0",
-    "cordova-plugin-add-swift-support": "2.0.2"
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova-plugin-reteno": "0.0.1"
   }
 }
