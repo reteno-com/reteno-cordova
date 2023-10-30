@@ -13,9 +13,6 @@
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.reteno.sample"
     },
-    "cordova-plugin-reteno": {
-      "PACKAGE_NAME": "com.reteno.sample"
-    },
     "cordova-plugin-reteno-firebase": {
       "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
@@ -27,6 +24,9 @@
     },
     "cordova-plugin-add-swift-support": {
       "PACKAGE_NAME": "com.reteno.example-app"
+    },
+    "cordova-plugin-reteno": {
+      "PACKAGE_NAME": "com.reteno.example-app.NotificationServiceExtension"
     }
   },
   "dependent_plugins": {}

@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-reteno": {
-    "source": {
-      "type": "local",
-      "path": "../../cordova-plugin-reteno"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-reteno-firebase": {
     "source": {
       "type": "local",
@@ -38,6 +30,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-reteno": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-reteno"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
-
 }

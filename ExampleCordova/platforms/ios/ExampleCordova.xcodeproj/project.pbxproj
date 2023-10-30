@@ -12,8 +12,10 @@
 		0208DB527B06416DAB1DA90A /* FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A74A529DF4994AF301F42 /* FirebasePlugin.m */; };
 		18DBE1B523474E078FAC257D /* FirebasePluginMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E22B14B54344D9AB7A0A02 /* FirebasePluginMessageReceiver.m */; };
 		1935F0A38C9C45B5B7297652 /* AppDelegate+FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084847437054EE4AB69BC33 /* AppDelegate+FirebasePlugin.m */; };
+		1A5B6B527E874C329E14DD82 /* RetenoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95E83EF21C4A338B93300B /* RetenoPlugin.swift */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1F2CBB8DFFA3465B8DAFEEC3 /* RetenoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EC4BD2E444D76897849D0 /* RetenoEvent.swift */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
@@ -21,22 +23,20 @@
 		4E7CA2B6272ABB0D00177EF9 /* config.xml in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		51465F7682584D77B0FFBE57 /* FirebasePluginMessageReceiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F70503BD8F4BAABD55B9E5 /* FirebasePluginMessageReceiverManager.m */; };
+		67E9D24179324F72878BB188 /* RetenoUserAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F40958CD054F1FBB2AC2FF /* RetenoUserAttributes.swift */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		A2949DA535799F952A9E5587 /* Pods_ExampleCordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C6D326EF23CE5E3C201C5 /* Pods_ExampleCordova.framework */; };
 		A5BD7EEB11524AFCA78F55E3 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D49BDE53A6E4DC6A64DE19D /* CDVNotification.bundle */; };
 		B4881CB834F249A6A08752D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA9B1232F99483BABEF7F61 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7CEE2A0C0214B13ADFDF8A0 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B738F9E1546484CB2C0528E /* CDVNotification.m */; };
-		BE82330AE89134266B446509 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D5CF8E974C43982F213C70 /* Pods_NotificationServiceExtension.framework */; };
 		C318DDDF2A784E0600A425AC /* Reteno in Frameworks */ = {isa = PBXBuildFile; productRef = C318DDDE2A784E0600A425AC /* Reteno */; };
 		C318DDE82A785B1100A425AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C318DDE72A785B1100A425AC /* GoogleService-Info.plist */; };
-		C318DDEA2A785F0000A425AC /* RetenoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318DDE92A785F0000A425AC /* RetenoUtils.swift */; };
 		C39601002A79006E00B4A237 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39600FF2A79006E00B4A237 /* NotificationService.swift */; };
 		C39601042A79006E00B4A237 /* NotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C39600FD2A79006E00B4A237 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C396010A2A79045A00B4A237 /* Reteno in Frameworks */ = {isa = PBXBuildFile; productRef = C39601092A79045A00B4A237 /* Reteno */; };
-		C9BA21E13533406CB58AC3D8 /* RetenoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF1F6B1C844836A420C6A0 /* RetenoPlugin.swift */; };
 		CCE92D8345CD47CDBFE8D2C6 /* CustomFCMReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B81867001A4B42A4B8FF3634 /* CustomFCMReceiver.m */; };
-		E2CD4D5C5ED24A669B1DE007 /* RetenoUserAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137DA32DFBF4AF390C3B5D6 /* RetenoUserAttributes.swift */; };
-		F2402357C8FB435987C5A1BB /* RetenoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C9582EA5C4CFB8658B57B /* RetenoEvent.swift */; };
+		D55096822AEFA3EF716E1103 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300751CCBCBE23BB6514BF2B /* Pods_NotificationServiceExtension.framework */; };
+		D8F4406B22214CF18A242751 /* RetenoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD328D0CB64EB0B78FFC72 /* RetenoUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,12 +99,12 @@
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156135FCF446415A8D9754AE /* CDVNotification.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVNotification.h; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; };
-		1AC083168172864BFEE05FD1 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		1B6E787547CB465D97E0943C /* RetenoPlugin-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "RetenoPlugin-Bridging-Header.h"; path = "cordova-plugin-reteno/RetenoPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* ExampleCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BADBFB73DDEAAC958304024 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		300751CCBCBE23BB6514BF2B /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -113,30 +113,29 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		41B24B87BD7C4F0B929D36DD /* RetenoPlugin-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "RetenoPlugin-Bridging-Header.h"; path = "cordova-plugin-reteno/RetenoPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		45F40958CD054F1FBB2AC2FF /* RetenoUserAttributes.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoUserAttributes.swift; path = "cordova-plugin-reteno/RetenoUserAttributes.swift"; sourceTree = "<group>"; };
 		4A3EF098630F4674BDFDFBBC /* CustomFCMReceiverPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CustomFCMReceiverPlugin.h; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiverPlugin.h"; sourceTree = "<group>"; };
+		4F95E83EF21C4A338B93300B /* RetenoPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoPlugin.swift; path = "cordova-plugin-reteno/RetenoPlugin.swift"; sourceTree = "<group>"; };
+		5A5EC4BD2E444D76897849D0 /* RetenoEvent.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoEvent.swift; path = "cordova-plugin-reteno/RetenoEvent.swift"; sourceTree = "<group>"; };
 		6175EF9D12DC4D6E986D88A1 /* AuthenticationServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		62FEE13A4DC2434598A669EA /* FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePlugin.h; path = "cordova-plugin-reteno-firebase/FirebasePlugin.h"; sourceTree = "<group>"; };
-		66C8AD0DE4B3F3B9F2B8F955 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CDVLaunchScreen.storyboard; sourceTree = "<group>"; };
-		6C2C9582EA5C4CFB8658B57B /* RetenoEvent.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoEvent.swift; path = "cordova-plugin-reteno/RetenoEvent.swift"; sourceTree = "<group>"; };
 		6D49BDE53A6E4DC6A64DE19D /* CDVNotification.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
 		6E2D12762AE2BEE40002A02C /* ExampleCordova-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ExampleCordova-Prefix.pch"; path = "../../../../../../../../Downloads/ExampleCordova-Prefix.pch"; sourceTree = "<group>"; };
 		80F70503BD8F4BAABD55B9E5 /* FirebasePluginMessageReceiverManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePluginMessageReceiverManager.m; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiverManager.m"; sourceTree = "<group>"; };
-		8137DA32DFBF4AF390C3B5D6 /* RetenoUserAttributes.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoUserAttributes.swift; path = "cordova-plugin-reteno/RetenoUserAttributes.swift"; sourceTree = "<group>"; };
 		85E1623E4F594DD28F24DB68 /* FirebasePluginMessageReceiverManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiverManager.h; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiverManager.h"; sourceTree = "<group>"; };
 		8B738F9E1546484CB2C0528E /* CDVNotification.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ExampleCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExampleCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9084847437054EE4AB69BC33 /* AppDelegate+FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+FirebasePlugin.m"; path = "cordova-plugin-reteno-firebase/AppDelegate+FirebasePlugin.m"; sourceTree = "<group>"; };
 		92CECFB6EF2C483AA025D32C /* CustomFCMReceiverPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CustomFCMReceiverPlugin.m; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiverPlugin.m"; sourceTree = "<group>"; };
 		993C6D326EF23CE5E3C201C5 /* Pods_ExampleCordova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleCordova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D5CF8E974C43982F213C70 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D8735C34644A79B928A050 /* FirebasePluginMessageReceiver.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiver.h; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiver.h"; sourceTree = "<group>"; };
-		A9FF1F6B1C844836A420C6A0 /* RetenoPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoPlugin.swift; path = "cordova-plugin-reteno/RetenoPlugin.swift"; sourceTree = "<group>"; };
 		B09A74A529DF4994AF301F42 /* FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePlugin.m; path = "cordova-plugin-reteno-firebase/FirebasePlugin.m"; sourceTree = "<group>"; };
 		B09E34AB78204AE583490287 /* AppDelegate+FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+FirebasePlugin.h"; path = "cordova-plugin-reteno-firebase/AppDelegate+FirebasePlugin.h"; sourceTree = "<group>"; };
 		B81867001A4B42A4B8FF3634 /* CustomFCMReceiver.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CustomFCMReceiver.m; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiver.m"; sourceTree = "<group>"; };
+		BAAD328D0CB64EB0B78FFC72 /* RetenoUtils.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = RetenoUtils.swift; path = "cordova-plugin-reteno/RetenoUtils.swift"; sourceTree = "<group>"; };
 		C318DDE72A785B1100A425AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C318DDE92A785F0000A425AC /* RetenoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetenoUtils.swift; sourceTree = "<group>"; };
 		C39600FD2A79006E00B4A237 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39600FF2A79006E00B4A237 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		C39601012A79006E00B4A237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +143,7 @@
 		CE69BDCD6AC849B2860CFFA2 /* CustomFCMReceiver.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CustomFCMReceiver.h; path = "cordova-plugin-customfcmreceiver/CustomFCMReceiver.h"; sourceTree = "<group>"; };
 		D70318827A132921403A852E /* Pods-ExampleCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleCordova.release.xcconfig"; path = "Target Support Files/Pods-ExampleCordova/Pods-ExampleCordova.release.xcconfig"; sourceTree = "<group>"; };
 		D9E22B14B54344D9AB7A0A02 /* FirebasePluginMessageReceiver.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePluginMessageReceiver.m; path = "cordova-plugin-reteno-firebase/FirebasePluginMessageReceiver.m"; sourceTree = "<group>"; };
+		E501499119D6533006B7D506 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA9B1232F99483BABEF7F61 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C396010A2A79045A00B4A237 /* Reteno in Frameworks */,
-				BE82330AE89134266B446509 /* Pods_NotificationServiceExtension.framework in Frameworks */,
+				D55096822AEFA3EF716E1103 /* Pods_NotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,6 @@
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				C318DDE92A785F0000A425AC /* RetenoUtils.swift */,
 			);
 			path = ExampleCordova;
 			sourceTree = "<group>";
@@ -240,7 +239,7 @@
 				EAA9B1232F99483BABEF7F61 /* AudioToolbox.framework */,
 				6175EF9D12DC4D6E986D88A1 /* AuthenticationServices.framework */,
 				993C6D326EF23CE5E3C201C5 /* Pods_ExampleCordova.framework */,
-				A4D5CF8E974C43982F213C70 /* Pods_NotificationServiceExtension.framework */,
+				300751CCBCBE23BB6514BF2B /* Pods_NotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,10 +272,6 @@
 				CE69BDCD6AC849B2860CFFA2 /* CustomFCMReceiver.h */,
 				8B738F9E1546484CB2C0528E /* CDVNotification.m */,
 				156135FCF446415A8D9754AE /* CDVNotification.h */,
-				A9FF1F6B1C844836A420C6A0 /* RetenoPlugin.swift */,
-				6C2C9582EA5C4CFB8658B57B /* RetenoEvent.swift */,
-				8137DA32DFBF4AF390C3B5D6 /* RetenoUserAttributes.swift */,
-				1B6E787547CB465D97E0943C /* RetenoPlugin-Bridging-Header.h */,
 				9084847437054EE4AB69BC33 /* AppDelegate+FirebasePlugin.m */,
 				B09A74A529DF4994AF301F42 /* FirebasePlugin.m */,
 				D9E22B14B54344D9AB7A0A02 /* FirebasePluginMessageReceiver.m */,
@@ -285,6 +280,11 @@
 				62FEE13A4DC2434598A669EA /* FirebasePlugin.h */,
 				A8D8735C34644A79B928A050 /* FirebasePluginMessageReceiver.h */,
 				85E1623E4F594DD28F24DB68 /* FirebasePluginMessageReceiverManager.h */,
+				4F95E83EF21C4A338B93300B /* RetenoPlugin.swift */,
+				5A5EC4BD2E444D76897849D0 /* RetenoEvent.swift */,
+				45F40958CD054F1FBB2AC2FF /* RetenoUserAttributes.swift */,
+				BAAD328D0CB64EB0B78FFC72 /* RetenoUtils.swift */,
+				41B24B87BD7C4F0B929D36DD /* RetenoPlugin-Bridging-Header.h */,
 			);
 			name = Plugins;
 			path = ExampleCordova/Plugins;
@@ -295,8 +295,8 @@
 			children = (
 				FFC7CE0672E84EE7DB3B3711 /* Pods-ExampleCordova.debug.xcconfig */,
 				D70318827A132921403A852E /* Pods-ExampleCordova.release.xcconfig */,
-				66C8AD0DE4B3F3B9F2B8F955 /* Pods-NotificationServiceExtension.debug.xcconfig */,
-				1AC083168172864BFEE05FD1 /* Pods-NotificationServiceExtension.release.xcconfig */,
+				E501499119D6533006B7D506 /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				2BADBFB73DDEAAC958304024 /* Pods-NotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39601052A79006E00B4A237 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
 			buildPhases = (
-				ACEE0BEA7BDEFFD551F5881D /* [CP] Check Pods Manifest.lock */,
+				953B5DE1D7C38808FC643E0C /* [CP] Check Pods Manifest.lock */,
 				C39600F92A79006E00B4A237 /* Sources */,
 				C39600FA2A79006E00B4A237 /* Frameworks */,
 				C39600FB2A79006E00B4A237 /* Resources */,
@@ -454,7 +454,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ACEE0BEA7BDEFFD551F5881D /* [CP] Check Pods Manifest.lock */ = {
+		953B5DE1D7C38808FC643E0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -561,14 +561,14 @@
 				01C17A3836DB498397776106 /* CustomFCMReceiverPlugin.m in Sources */,
 				CCE92D8345CD47CDBFE8D2C6 /* CustomFCMReceiver.m in Sources */,
 				B7CEE2A0C0214B13ADFDF8A0 /* CDVNotification.m in Sources */,
-				C9BA21E13533406CB58AC3D8 /* RetenoPlugin.swift in Sources */,
-				F2402357C8FB435987C5A1BB /* RetenoEvent.swift in Sources */,
-				C318DDEA2A785F0000A425AC /* RetenoUtils.swift in Sources */,
-				E2CD4D5C5ED24A669B1DE007 /* RetenoUserAttributes.swift in Sources */,
 				1935F0A38C9C45B5B7297652 /* AppDelegate+FirebasePlugin.m in Sources */,
 				0208DB527B06416DAB1DA90A /* FirebasePlugin.m in Sources */,
 				18DBE1B523474E078FAC257D /* FirebasePluginMessageReceiver.m in Sources */,
 				51465F7682584D77B0FFBE57 /* FirebasePluginMessageReceiverManager.m in Sources */,
+				1A5B6B527E874C329E14DD82 /* RetenoPlugin.swift in Sources */,
+				1F2CBB8DFFA3465B8DAFEEC3 /* RetenoEvent.swift in Sources */,
+				67E9D24179324F72878BB188 /* RetenoUserAttributes.swift in Sources */,
+				D8F4406B22214CF18A242751 /* RetenoUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +607,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 198;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9JJR3XKX7;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -616,8 +617,9 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "ExampleCordova/ExampleCordova-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -627,7 +629,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = NO;
 			};
@@ -644,6 +646,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 198;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9JJR3XKX7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -651,17 +654,18 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "ExampleCordova/ExampleCordova-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.reteno.example-app";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.reteno.example-app";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = NO;
 			};
@@ -706,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MERGED_BINARY_TYPE = automatic;
 				ONLY_ACTIVE_ARCH = YES;
@@ -714,6 +718,7 @@
 				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
 				WK_WEB_VIEW_ONLY = 1;
 			};
 			name = Debug;
@@ -756,20 +761,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MERGED_BINARY_TYPE = automatic;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				SWIFT_VERSION = 5;
 				WK_WEB_VIEW_ONLY = 1;
 			};
 			name = Release;
 		};
 		C39601062A79006E00B4A237 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66C8AD0DE4B3F3B9F2B8F955 /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = E501499119D6533006B7D506 /* Pods-NotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -801,11 +808,8 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -816,15 +820,16 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C39601072A79006E00B4A237 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC083168172864BFEE05FD1 /* Pods-NotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 2BADBFB73DDEAAC958304024 /* Pods-NotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -836,7 +841,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/NotificationServiceExtension/NotificationServiceExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -851,23 +856,20 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reteno.example-app.NotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.reteno.example-app.NotificationServiceExtension";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.reteno.example-app.NotificationServiceExtension";
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

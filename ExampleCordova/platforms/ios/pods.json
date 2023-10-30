@@ -71,6 +71,11 @@
             "name": "GoogleTagManager",
             "spec": "7.4.3",
             "count": 1
+        },
+        "Reteno": {
+            "name": "Reteno",
+            "spec": "1.6.6",
+            "count": 1
         }
     }
 }

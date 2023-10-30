@@ -108,9 +108,6 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-reteno": {
-      "PACKAGE_NAME": "com.reteno.sample"
-    },
     "cordova-plugin-reteno-firebase": {
       "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
@@ -142,18 +139,13 @@
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.reteno.sample"
+    },
+    "cordova-plugin-reteno": {
+      "PACKAGE_NAME": "com.reteno.sample"
     }
   },
   "dependent_plugins": {},
   "modules": [
-    {
-      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
-      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
-      "pluginId": "cordova-plugin-reteno",
-      "clobbers": [
-        "RetenoPlugin"
-      ]
-    },
     {
       "id": "cordova-plugin-reteno-firebase.FirebasePlugin",
       "file": "plugins/cordova-plugin-reteno-firebase/www/firebase.js",
@@ -185,12 +177,20 @@
       "merges": [
         "navigator.notification"
       ]
+    },
+    {
+      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
+      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
+      "pluginId": "cordova-plugin-reteno",
+      "clobbers": [
+        "RetenoPlugin"
+      ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-reteno": "0.0.1",
     "cordova-plugin-reteno-firebase": "16.1.0",
     "cordova-plugin-customfcmreceiver": "1.0.0",
-    "cordova-plugin-dialogs": "2.0.2"
+    "cordova-plugin-dialogs": "2.0.2",
+    "cordova-plugin-reteno": "0.0.1"
   }
 }
