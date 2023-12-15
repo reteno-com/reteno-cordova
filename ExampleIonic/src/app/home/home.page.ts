@@ -85,9 +85,9 @@ export class HomePage {
     private firebasePlugin: AwesomeCordovaPluginFirebase
   ) {
     platform.ready().then(() => {
-      this.retenoPlugin.setApiKey('your_access_key_here').then((response) => {
-        console.log('set api key' + response);
-      });
+      // this.retenoPlugin.setApiKey('your_access_key_here').then((response) => {
+      //   console.log('set api key' + response);
+      // });
 
       this.#output = document.getElementById('log-output');
       console.log(this.#output.toString());
@@ -112,12 +112,6 @@ export class HomePage {
       } else if (this.platform.is('ios')) {
         this.initIos();
       }
-    });
-  }
-
-  setApiKey() {
-    this.retenoPlugin.setApiKey('your_access_key_here').then((response) => {
-      console.log('set api key' + response);
     });
   }
 

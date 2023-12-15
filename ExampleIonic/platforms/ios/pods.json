@@ -12,11 +12,6 @@
         }
     },
     "libraries": {
-        "Reteno": {
-            "name": "Reteno",
-            "spec": "1.6.6",
-            "count": 1
-        },
         "FirebaseCore": {
             "name": "FirebaseCore",
             "spec": "10.10.0",
@@ -75,6 +70,11 @@
         "GoogleTagManager": {
             "name": "GoogleTagManager",
             "spec": "7.4.3",
+            "count": 1
+        },
+        "Reteno": {
+            "name": "Reteno",
+            "spec": "1.7.1",
             "count": 1
         }
     }

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
-        "version" : "5.7.1"
+        "revision" : "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
+        "version" : "5.8.1"
       }
     },
     {
@@ -14,17 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/reteno-com/reteno-mobile-ios-sdk.git",
       "state" : {
-        "revision" : "1dd0eb5fb149f85ef10bd622ed3c7aa3f274dc38",
-        "version" : "1.6.6"
-      }
-    },
-    {
-      "identity" : "sentry-cocoa",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/getsentry/sentry-cocoa",
-      "state" : {
-        "revision" : "04bee4ad86d74d4cb4d7101ff826d6e355301ba9",
-        "version" : "8.9.4"
+        "revision" : "f4c40904370c3a7710aac7414f31bacfcbb064f6",
+        "version" : "1.7.1"
       }
     }
   ],

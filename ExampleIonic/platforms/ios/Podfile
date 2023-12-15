@@ -4,8 +4,7 @@ platform :ios, '12.0'
 use_frameworks!
 target 'ExampleIonic' do
 	project 'ExampleIonic.xcodeproj'
-	pod 'Reteno'
-	pod 'Sentry'
+	pod 'Reteno', '1.7.1'
 	pod 'Firebase/Core', '10.10.0'
 	pod 'Firebase/Auth', '10.10.0'
 	pod 'Firebase/Messaging', '10.10.0'
@@ -18,6 +17,11 @@ target 'ExampleIonic' do
 	pod 'Firebase/Installations', '10.10.0'
 	pod 'GoogleSignIn', '6.2.4'
 	pod 'GoogleTagManager', '7.4.3'
+end
+
+target 'NotificationServiceExtension' do
+	use_frameworks!
+	pod 'Reteno', '1.7.1'
 end
 
 post_install do |installer|

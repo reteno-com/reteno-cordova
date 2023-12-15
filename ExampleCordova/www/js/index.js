@@ -95,11 +95,11 @@ function onDeviceReady() {
   FirebasePlugin = window.FirebasePlugin;
   $output = $("#log-output");
   log("deviceready");
-  RetenoPlugin.setApiKey(
-    "your_access_key_here",
-    function (msg) {},
-    function (err) {}
-  );
+  // RetenoPlugin.setApiKey(
+  //   "your_access_key_here",
+  //   function (msg) {},
+  //   function (err) {}
+  // );
 
   $("#device-platform").text(cordova.platformId);
 
