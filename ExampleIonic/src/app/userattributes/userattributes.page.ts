@@ -62,7 +62,7 @@ export class UserattributesPage implements OnInit {
 
     const payload: SetUserAttributesPayload = {
       externalUserId: this.externalId,
-      userAttributes: userAttributes,
+      user: { userAttributes },
     };
     this.retenoPlugin.setUserAttributes(payload);
     this.clear();

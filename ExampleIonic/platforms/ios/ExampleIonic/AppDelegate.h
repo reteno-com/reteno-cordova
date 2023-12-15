@@ -18,6 +18,7 @@
  */
 
 #import <Cordova/CDVAppDelegate.h>
+#import "ExampleIonic-Swift.h"
 
 @interface AppDelegate : CDVAppDelegate
 

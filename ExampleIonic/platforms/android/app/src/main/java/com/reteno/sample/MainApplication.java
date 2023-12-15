@@ -9,13 +9,13 @@ import com.reteno.core.RetenoImpl;
 import com.reteno.plugin.CordovaRetenoApplication;
 
 public class MainApplication extends Application implements CordovaRetenoApplication {
-    private String key=null;
+
     private Reteno retenoInstance=null;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        retenoInstance = new RetenoImpl(this, "your_access_key_here");
+        retenoInstance = new RetenoImpl(this, "YOUR_API_KEY");
     }
 
     @NonNull
@@ -24,10 +24,4 @@ public class MainApplication extends Application implements CordovaRetenoApplica
         return retenoInstance;
     }
 
-    @Override
-    public void initReteno(String key) {
-        this.key = key;
-        if (retenoInstance==null && key!=null)
-            retenoInstance = new RetenoImpl(this, key);
-    }
 }

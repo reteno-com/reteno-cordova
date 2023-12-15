@@ -45,7 +45,7 @@ export class AnonymoususerattributesPage implements OnInit {
     };
 
     const payload = {
-      userAttributes,
+      user: { userAttributes },
     };
     this.retenoPlugin.setAnonymousUserAttributes(payload);
     this.clear();
