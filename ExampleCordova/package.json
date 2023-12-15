@@ -18,7 +18,8 @@
     "cordova-ios": "^7.0.0",
     "cordova-plugin-add-swift-support": "^2.0.2",
     "cordova-plugin-customfcmreceiver": "file:../../example-plugins/cordova-plugin-customfcmreceiver",
-    "cordova-plugin-dialogs": "^2.0.2"
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-reteno": "file:../../cordova-plugin-reteno"
   },
   "cordova": {
     "platforms": [
@@ -58,7 +59,6 @@
     }
   },
   "dependencies": {
-    "cordova-plugin-reteno": "1.0.0",
     "cordova-plugin-reteno-firebase": "^1.0.0",
     "xml-js": "^1.6.11"
   }
