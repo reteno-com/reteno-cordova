@@ -10,7 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "android": "ionic cordova run android"
+    "android": "ionic cordova run android",
+    "buildAndroid": "ionic cordova build android"
   },
   "private": true,
   "dependencies": {

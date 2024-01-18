@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "android": "cordova run android"
+    "android": "cordova run android",
+    "buildAndroid": "cordova build android"
   },
   "keywords": [
     "ecosystem:cordova"
