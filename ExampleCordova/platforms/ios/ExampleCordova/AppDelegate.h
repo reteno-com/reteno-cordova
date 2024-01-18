@@ -18,6 +18,8 @@
  */
 
 #import <Cordova/CDVAppDelegate.h>
+#import "ExampleCordova-Swift.h"
+
 
 @interface AppDelegate : CDVAppDelegate
 

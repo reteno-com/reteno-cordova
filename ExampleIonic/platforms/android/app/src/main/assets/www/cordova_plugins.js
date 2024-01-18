@@ -25,14 +25,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
-      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
-      "pluginId": "cordova-plugin-reteno",
-      "clobbers": [
-        "RetenoPlugin"
-      ]
-    },
-    {
       "id": "cordova-plugin-reteno-firebase.FirebasePlugin",
       "file": "plugins/cordova-plugin-reteno-firebase/www/firebase.js",
       "pluginId": "cordova-plugin-reteno-firebase",
@@ -55,15 +47,23 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.StatusBar"
       ]
+    },
+    {
+      "id": "cordova-plugin-reteno.cordova-plugin-reteno",
+      "file": "plugins/cordova-plugin-reteno/www/cordova-plugin-reteno.js",
+      "pluginId": "cordova-plugin-reteno",
+      "clobbers": [
+        "RetenoPlugin"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-ionic-webview": "5.0.0",
-    "cordova-plugin-reteno": "0.0.1",
     "cordova-plugin-reteno-firebase": "16.1.0",
     "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-statusbar": "2.4.2"
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-reteno": "0.0.1"
   };
 });

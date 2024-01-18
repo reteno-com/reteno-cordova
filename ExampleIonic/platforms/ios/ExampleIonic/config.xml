@@ -35,9 +35,6 @@
     <feature name="IonicWebView">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
-    <feature name="RetenoPlugin">
-        <param name="ios-package" value="RetenoPlugin" />
-    </feature>
     <feature name="FirebasePlugin">
         <param name="ios-package" value="FirebasePlugin" />
         <param name="onload" value="true" />
@@ -49,6 +46,9 @@
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="RetenoPlugin">
+        <param name="ios-package" value="RetenoPlugin" />
     </feature>
     <name>ExampleIonic</name>
     <description>An awesome Ionic/Cordova Reteno app.</description>
@@ -122,9 +122,9 @@
     <preference name="Suppresses3DTouchGesture" value="false" />
     <preference name="deployment-target" value="12.0" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-    <preference name="SwiftVersion" value="5" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="SwiftVersion" value="5" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />

@@ -5,7 +5,7 @@
 build/
 
 Pods/
-/www/*
+www/
 *.xcuserstate
 xcuserdata
 project.xcworkspace

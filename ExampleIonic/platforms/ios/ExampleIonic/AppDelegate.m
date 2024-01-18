@@ -25,6 +25,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
+    
+    [RetenoTransitionLayer setupForApplication:application];
+    
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
